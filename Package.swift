@@ -15,17 +15,3 @@ let package = Package(
     .testTarget(name: "KLTests", dependencies: ["KL"]),
   ]
 )
-
-#if os(macOS) || os(Linux)
-package.products.append(.executable(name: "kl", targets: ["cli"]))
-package.dependencies.append(.package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.0"))
-package.targets.append(
-  .executableTarget(
-    name: "cli",
-    dependencies: [
-      "KL",
-      .product(name: "ArgumentParser", package: "swift-argument-parser"),
-    ]
-  )
-)
-#endif
