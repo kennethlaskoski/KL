@@ -6,4 +6,5 @@ struct Info {
   let gmail = "kennethlaskoski@gmail.com"
   let github = "@kennethlaskoski"
   let twitter = "@kennethlaskoski"
+  let linkedin = "@kennethlaskoski"
 }

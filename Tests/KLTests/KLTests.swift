@@ -7,6 +7,7 @@ final class KLTests: XCTestCase {
     XCTAssertEqual(KL.gmail, "kennethlaskoski@gmail.com")
     XCTAssertEqual(KL.github, "@kennethlaskoski")
     XCTAssertEqual(KL.twitter, "@kennethlaskoski")
+    XCTAssertEqual(KL.linkedin, "@kennethlaskoski")
 
     XCTAssertEqual(KL.email, KL.gmail)
   }

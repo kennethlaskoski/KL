@@ -8,6 +8,7 @@ public struct KL {
   public static var gmail: String { info.gmail }
   public static var github: String { info.github }
   public static var twitter: String{ info.twitter }
+  public static var linkedin: String { info.linkedin }
 
   public static var email: String { gmail }
 }
