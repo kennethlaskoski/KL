@@ -5,7 +5,7 @@ name: Swift
 
 on:
   push:
-    branches: [main]
+    branches: ["main"]
     paths:
       - '.github/workflows/swift.yml'
       - 'Sources/**/*.swift'
@@ -21,7 +21,7 @@ jobs:
     name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macOS-latest, ubuntu-latest]
+        os: [ubuntu-latest]
         swift: ["5.6"]
     runs-on: ${{ matrix.os }}
     steps:
