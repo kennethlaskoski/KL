@@ -11,7 +11,11 @@ let package = Package(
     .library(name: "KL", targets: ["KL"]),
   ],
   targets: [
-    .target(name: "KL", dependencies: []),
+    .target(
+        name: "KL",
+         dependencies: [],
+         resources: [.copy("Resources")]
+    ),
     .testTarget(name: "KLTests", dependencies: ["KL"]),
   ]
 )
